@@ -3,7 +3,7 @@ import java.util.*;
 public class Grafo {
     private final Map<String, List<Aresta>> adjacencias;
 
-    
+
     public Grafo() {
         this.adjacencias = new HashMap<>();
     }
