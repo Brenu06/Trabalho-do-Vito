@@ -58,3 +58,10 @@ public class MenorCaminhoCapitais {
             System.out.println("Distância total: " + distancia + " km");
         }
     }
+
+     private static void listarCapitais() {
+        System.out.println("\nCapitais disponíveis:");
+        for (String capital : grafoCapitais.getAdjacencias().keySet()) {
+            System.out.println("- " + capital);
+        }
+    }
