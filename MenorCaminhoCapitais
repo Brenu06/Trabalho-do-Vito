@@ -34,3 +34,27 @@ public class MenorCaminhoCapitais {
         System.out.println("3 - Sair");
         System.out.print("Escolha uma opção: ");
     }
+
+ private static void calcularMenorCaminho() {
+        System.out.print("\nDigite a capital de origem: ");
+        String origem = scanner.nextLine();
+
+        System.out.print("Digite a capital de destino: ");
+        String destino = scanner.nextLine();
+
+        if (!grafoCapitais.getAdjacencias().containsKey(origem) || !grafoCapitais.getAdjacencias().containsKey(destino)) {
+            System.out.println("Uma ou ambas as capitais informadas não estão no sistema.");
+            return;
+        }
+
+        List<String> caminho = grafoCapitais.obterMenorCaminho(origem, destino);
+        double distancia = grafoCapitais.obterDistanciaTotal(origem, destino);
+
+        if (caminho.isEmpty()) {
+            System.out.println("\nNão existe caminho entre " + origem + " e " + destino);
+        } else {
+            System.out.println("\nResultado:");
+            System.out.println("Menor caminho: " + String.join(" -> ", caminho));
+            System.out.println("Distância total: " + distancia + " km");
+        }
+    }
