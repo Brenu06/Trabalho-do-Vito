@@ -11,3 +11,20 @@ public class MenorCaminhoCapitais {
 
         System.out.println("Sistema de Cálculo de Menor Caminho entre Capitais Brasileiras");
         System.out.println("-------------------------------------------------------------");
+        
+        while (true) {
+            exibirMenu();
+            int opcao = scanner.nextInt();
+            scanner.nextLine(); // Consumir nova linha
+
+            switch (opcao) {
+                case 1 -> calcularMenorCaminho();
+                case 2 -> listarCapitais();
+                case 3 -> {
+                    System.out.println("Saindo do sistema...");
+                    return;
+                }
+                default -> System.out.println("Opção inválida. Tente novamente.");
+            }
+        }
+    }
