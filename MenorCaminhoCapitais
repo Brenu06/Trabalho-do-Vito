@@ -65,3 +65,18 @@ public class MenorCaminhoCapitais {
             System.out.println("- " + capital);
         }
     }
+
+      private static void inicializarGrafo() {
+        grafoCapitais = new Grafo();
+
+        String[] capitais = {
+            "Sao Paulo", "Rio de Janeiro", "Belo Horizonte", "Salvador", "Fortaleza",
+            "Brasilia", "Curitiba", "Recife", "Porto Alegre", "Manaus",
+            "Belem", "Goiania", "Vitoria", "Florianopolis", "Natal",
+            "Campo Grande", "Cuiaba", "Joao Pessoa", "Maceio", "Teresina",
+            "Aracaju", "Porto Velho", "Boa Vista", "Palmas", "Rio Branco", "Macapa"
+        };
+
+        for (String capital : capitais) {
+            grafoCapitais.adicionarVertice(capital);
+        }
