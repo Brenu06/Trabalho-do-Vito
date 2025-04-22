@@ -1,1 +1,6 @@
 # Trabalho-do-Vito
+import java.util.*;
+
+public class MenorCaminhoCapitais {
+    private static Grafo grafoCapitais;
+    private static Scanner scanner;
