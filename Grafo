@@ -13,6 +13,8 @@ public class Grafo {
     }
 
     public void adicionarAresta(String origem, String destino, int distancia) {
+        adjacencias.putIfAbsent(origem, new ArrayList<>()); // Garante que o vértice de origem existe
+        adjacencias.putIfAbsent(destino, new ArrayList<>()); // Garante que o vértice de destino existe
         adjacencias.get(origem).add(new Aresta(destino, distancia));
         adjacencias.get(destino).add(new Aresta(origem, distancia)); // Grafo não direcionado
     }
