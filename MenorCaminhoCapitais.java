@@ -171,7 +171,4 @@ private static void calcularMenorCaminho() {
     grafoCapitais.adicionarAresta("Macapa", "Belem", 606);
 }
 }
-
-
-// Continue corrigindo as distâncias das demais arestas conforme o padrão acima.
-// Use fontes confiáveis para as distâncias rodoviárias reais (Google Maps, DNIT, IBGE, Wikipedia).
+//Fim do código
