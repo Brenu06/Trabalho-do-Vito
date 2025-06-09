@@ -119,10 +119,7 @@ private static void calcularMenorCaminho() {
 
     // Nordeste-Norte
     grafoCapitais.adicionarAresta("Sao Luis", "Belem", 806);
-<<<<<<< HEAD
-    
-=======
->>>>>>> ee01b7a60ec2c608b9883a2a212ec4b1c1166e79
+
 
     // Centro-Oeste
     grafoCapitais.adicionarAresta("Brasilia", "Goiania", 209);
@@ -137,10 +134,10 @@ private static void calcularMenorCaminho() {
     // Norte
     grafoCapitais.adicionarAresta("Porto Velho", "Manaus", 901);
     grafoCapitais.adicionarAresta("Manaus", "Boa Vista", 785);
-<<<<<<< HEAD
+
     grafoCapitais.adicionarAresta("Manaus", "Macapa", 1500); // via balsa/barco1
-=======
->>>>>>> ee01b7a60ec2c608b9883a2a212ec4b1c1166e79
+
+
 
     // Norte-Nordeste
     grafoCapitais.adicionarAresta("Belem", "Macapa", 606); // via balsa/barco
@@ -152,13 +149,13 @@ private static void calcularMenorCaminho() {
 
     // Ligações interestaduais importantes (para garantir conectividade realista)
     grafoCapitais.adicionarAresta("Brasilia", "Belo Horizonte", 716);
-<<<<<<< HEAD
+
     grafoCapitais.adicionarAresta("Brasilia", "Goiania", 209);
     grafoCapitais.adicionarAresta("Brasilia", "Cuiaba", 1133);
     grafoCapitais.adicionarAresta("Brasilia", "Salvador", 1444);
     grafoCapitais.adicionarAresta("Brasilia", "Palmas", 973);
     
-=======
+
     grafoCapitais.adicionarAresta("Brasilia", "Campo Grande", 1134);
     grafoCapitais.adicionarAresta("Brasilia", "Cuiaba", 1133);
     grafoCapitais.adicionarAresta("Brasilia", "Salvador", 1444);
@@ -167,22 +164,21 @@ private static void calcularMenorCaminho() {
     grafoCapitais.adicionarAresta("Brasilia", "Porto Velho", 2180);
     grafoCapitais.adicionarAresta("Brasilia", "Rio Branco", 2217);
 
->>>>>>> ee01b7a60ec2c608b9883a2a212ec4b1c1166e79
+
     // Sudeste-Nordeste
     grafoCapitais.adicionarAresta("Vitoria", "Salvador", 1080);
     grafoCapitais.adicionarAresta("Belo Horizonte", "Salvador", 1372);
 
-<<<<<<< HEAD
+
 
     // Norte-Nordeste
     grafoCapitais.adicionarAresta("Belem", "Sao Luis", 946);
-=======
+
     // Sul-Sudeste
     grafoCapitais.adicionarAresta("Curitiba", "Porto Alegre", 711);
 
     // Norte-Nordeste
     grafoCapitais.adicionarAresta("Belem", "Teresina", 946);
->>>>>>> ee01b7a60ec2c608b9883a2a212ec4b1c1166e79
 
     // Outras ligações importantes para garantir conectividade
     grafoCapitais.adicionarAresta("Palmas", "Campo Grande", 1430);
@@ -192,9 +188,6 @@ private static void calcularMenorCaminho() {
     // Exemplo de ligação para Macapá (via balsa para Belém)
     grafoCapitais.adicionarAresta("Macapa", "Belem", 606);
 }
-<<<<<<< HEAD
 }
-=======
-}
-//Fim do código
->>>>>>> ee01b7a60ec2c608b9883a2a212ec4b1c1166e79
+
+//só para atualizar o código, não é necessário alterar nada aqui
