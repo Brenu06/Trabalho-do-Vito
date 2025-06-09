@@ -97,6 +97,9 @@ private static void calcularMenorCaminho() {
 
     // Sudeste
     grafoCapitais.adicionarAresta("Sao Paulo", "Rio de Janeiro", 430);
+    grafoCapitais.adicionarAresta("Rio de Janeiro", "Belo Horizonte", 437);
+    grafoCapitais.adicionarAresta("Belo Horizonte", "Vitoria", 520);
+    grafoCapitais.adicionarAresta("Rio de Janeiro", "Vitoria", 520);
     grafoCapitais.adicionarAresta("Sao Paulo", "Curitiba", 408);
     grafoCapitais.adicionarAresta("Sao Paulo", "Belo Horizonte", 586);
     grafoCapitais.adicionarAresta("Belo Horizonte", "Vitoria", 524);
@@ -160,9 +163,8 @@ private static void calcularMenorCaminho() {
     grafoCapitais.adicionarAresta("Brasilia", "Cuiaba", 1133);
     grafoCapitais.adicionarAresta("Brasilia", "Salvador", 1444);
     grafoCapitais.adicionarAresta("Brasilia", "Palmas", 973);
-    grafoCapitais.adicionarAresta("Brasilia", "Belem", 2120);
-    grafoCapitais.adicionarAresta("Brasilia", "Porto Velho", 2180);
-    grafoCapitais.adicionarAresta("Brasilia", "Rio Branco", 2217);
+    grafoCapitais.adicionarAresta("Brasilia", "Belo Horizonte", 740);
+
 
 
     // Sudeste-Nordeste
@@ -191,3 +193,4 @@ private static void calcularMenorCaminho() {
 }
 
 //só para atualizar o código, não é necessário alterar nada aqui
+//Para atualizar o código, basta adicionar ou remover capitais e arestas no método inicializarGrafo().
