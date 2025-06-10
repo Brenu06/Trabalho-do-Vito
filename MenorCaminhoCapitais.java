@@ -35,7 +35,6 @@ public class MenorCaminhoCapitais {
         System.out.print("Escolha uma opção: ");
     }
 
- // ...código existente...
 
 private static void calcularMenorCaminho() {
     System.out.print("\nDigite a capital de origem: ");
@@ -102,7 +101,6 @@ private static void calcularMenorCaminho() {
     grafoCapitais.adicionarAresta("Rio de Janeiro", "Vitoria", 520);
     grafoCapitais.adicionarAresta("Sao Paulo", "Curitiba", 408);
     grafoCapitais.adicionarAresta("Sao Paulo", "Belo Horizonte", 586);
-    grafoCapitais.adicionarAresta("Belo Horizonte", "Vitoria", 524);
 
     // Sul
     grafoCapitais.adicionarAresta("Curitiba", "Florianopolis", 300);
@@ -152,20 +150,11 @@ private static void calcularMenorCaminho() {
 
     // Ligações interestaduais importantes (para garantir conectividade realista)
     grafoCapitais.adicionarAresta("Brasilia", "Belo Horizonte", 716);
-
     grafoCapitais.adicionarAresta("Brasilia", "Goiania", 209);
     grafoCapitais.adicionarAresta("Brasilia", "Cuiaba", 1133);
     grafoCapitais.adicionarAresta("Brasilia", "Salvador", 1444);
     grafoCapitais.adicionarAresta("Brasilia", "Palmas", 973);
-    
-
     grafoCapitais.adicionarAresta("Brasilia", "Campo Grande", 1134);
-    grafoCapitais.adicionarAresta("Brasilia", "Cuiaba", 1133);
-    grafoCapitais.adicionarAresta("Brasilia", "Salvador", 1444);
-    grafoCapitais.adicionarAresta("Brasilia", "Palmas", 973);
-    grafoCapitais.adicionarAresta("Brasilia", "Belo Horizonte", 740);
-
-
 
     // Sudeste-Nordeste
     grafoCapitais.adicionarAresta("Vitoria", "Salvador", 1080);
@@ -176,14 +165,7 @@ private static void calcularMenorCaminho() {
     // Norte-Nordeste
     grafoCapitais.adicionarAresta("Belem", "Sao Luis", 946);
 
-    // Sul-Sudeste
-    grafoCapitais.adicionarAresta("Curitiba", "Porto Alegre", 711);
-
-    // Norte-Nordeste
-    grafoCapitais.adicionarAresta("Belem", "Teresina", 946);
-
     // Outras ligações importantes para garantir conectividade
-    grafoCapitais.adicionarAresta("Palmas", "Campo Grande", 1430);
     grafoCapitais.adicionarAresta("Palmas", "Teresina", 1250);
     grafoCapitais.adicionarAresta("Palmas", "Sao Luis", 1370);
 
@@ -191,6 +173,3 @@ private static void calcularMenorCaminho() {
     grafoCapitais.adicionarAresta("Macapa", "Belem", 606);
 }
 }
-
-//só para atualizar o código, não é necessário alterar nada aqui
-//Para atualizar o código, basta adicionar ou remover capitais e arestas no método inicializarGrafo().
