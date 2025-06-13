@@ -138,8 +138,6 @@ private static void calcularMenorCaminho() {
 
     grafoCapitais.adicionarAresta("Manaus", "Macapa", 1500); // via balsa/barco1
 
-
-
     // Norte-Nordeste
     grafoCapitais.adicionarAresta("Belem", "Macapa", 606); // via balsa/barco
     grafoCapitais.adicionarAresta("Belem", "Palmas", 1600);
