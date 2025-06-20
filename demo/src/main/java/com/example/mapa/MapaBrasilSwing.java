@@ -96,41 +96,41 @@ public class MapaBrasilSwing extends JFrame {
 
     private void configurarCoordenadas() {
         // Norte
-        coordenadasCapitais.put("Manaus", new Point(220, 150));
-        coordenadasCapitais.put("Belem", new Point(450, 150));
-        coordenadasCapitais.put("Porto Velho", new Point(200, 230));
-        coordenadasCapitais.put("Rio Branco", new Point(100, 230));
-        coordenadasCapitais.put("Macapa", new Point(450, 50));
-        coordenadasCapitais.put("Boa Vista", new Point(250, 70));
-        coordenadasCapitais.put("Palmas", new Point(500, 250));
+        coordenadasCapitais.put("Manaus", new Point(280, 130));
+        coordenadasCapitais.put("Belem", new Point(530, 110));
+        coordenadasCapitais.put("Porto Velho", new Point(215, 220));
+        coordenadasCapitais.put("Rio Branco", new Point(120, 240));
+        coordenadasCapitais.put("Macapa", new Point(460, 80));
+        coordenadasCapitais.put("Boa Vista", new Point(270, 45));
+        coordenadasCapitais.put("Palmas", new Point(520, 230));
 
         // Nordeste
-        coordenadasCapitais.put("Sao Luis", new Point(570, 170));
-        coordenadasCapitais.put("Teresina", new Point(610, 215));
-        coordenadasCapitais.put("Fortaleza", new Point(700, 170));
+        coordenadasCapitais.put("Sao Luis", new Point(610, 140));
+        coordenadasCapitais.put("Teresina", new Point(635, 165));
+        coordenadasCapitais.put("Fortaleza", new Point(700, 150));
         coordenadasCapitais.put("Natal", new Point(750, 180));
         coordenadasCapitais.put("Joao Pessoa", new Point(730, 200));
         coordenadasCapitais.put("Recife", new Point(720, 220));
         coordenadasCapitais.put("Maceio", new Point(740, 239));
         coordenadasCapitais.put("Aracaju", new Point(735, 255));
-        coordenadasCapitais.put("Salvador", new Point(650, 270));
+        coordenadasCapitais.put("Salvador", new Point(710, 280));
 
         // Centro-Oeste
         coordenadasCapitais.put("Brasilia", new Point(530, 325));
-        coordenadasCapitais.put("Goiania", new Point(450, 345));
-        coordenadasCapitais.put("Cuiaba", new Point(380, 370));
-        coordenadasCapitais.put("Campo Grande", new Point(350, 270));
+        coordenadasCapitais.put("Goiania", new Point(490, 345)); 
+        coordenadasCapitais.put("Cuiaba", new Point(365, 320)); 
+        coordenadasCapitais.put("Campo Grande", new Point(390, 405)); 
 
         // Sudeste
-        coordenadasCapitais.put("Sao Paulo", new Point(500, 430));
+        coordenadasCapitais.put("Sao Paulo", new Point(540, 440));
         coordenadasCapitais.put("Rio de Janeiro", new Point(600, 430));
-        coordenadasCapitais.put("Belo Horizonte", new Point(540, 370));
-        coordenadasCapitais.put("Vitoria", new Point(660, 380));
+        coordenadasCapitais.put("Belo Horizonte", new Point(600, 385));
+        coordenadasCapitais.put("Vitoria", new Point(650, 400));
 
         // Sul
-        coordenadasCapitais.put("Curitiba", new Point(450, 450));
-        coordenadasCapitais.put("Florianopolis", new Point(480, 500));
-        coordenadasCapitais.put("Porto Alegre", new Point(420, 520));
+        coordenadasCapitais.put("Curitiba", new Point(490, 465));
+        coordenadasCapitais.put("Florianopolis", new Point(490, 500));
+        coordenadasCapitais.put("Porto Alegre", new Point(450, 540));
     }
 
     private void desenharPontosELinhas(Graphics g) {
@@ -157,7 +157,7 @@ public class MapaBrasilSwing extends JFrame {
             Point destino = coordenadasCapitais.get(caminhoAtual.get(caminhoAtual.size() - 1));
             g.setColor(Color.GREEN);
             g.fillOval(origem.x - 8, origem.y - 8, 16, 16);
-            g.setColor(Color.RED);
+            g.setColor(Color.ORANGE);
             g.fillOval(destino.x - 8, destino.y - 8, 16, 16);
         }
     }
@@ -185,10 +185,4 @@ public class MapaBrasilSwing extends JFrame {
         painelMapa.repaint();
     }
 
-    public static void main(String[] args) {
-        MenorCaminhoCapitais.inicializarGrafo();
-        SwingUtilities.invokeLater(() -> {
-            new MapaBrasilSwing().setVisible(true);
-        });
-    }
 }

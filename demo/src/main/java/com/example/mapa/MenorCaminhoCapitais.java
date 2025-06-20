@@ -6,34 +6,6 @@ public class MenorCaminhoCapitais {
     private static Grafo grafoCapitais;
     private static Scanner scanner;
 
-    public static void main(String[] args) {
-        inicializarGrafo();
-        scanner = new Scanner(System.in);
-
-        System.out.println("Sistema de Cálculo de Menor Caminho entre Capitais Brasileiras");
-        System.out.println("-------------------------------------------------------------");
-
-         while (true) {
-            exibirMenu();
-            int opcao = scanner.nextInt();
-            scanner.nextLine(); // Consumir nova linha
-
-            switch (opcao) {
-                case 1:
-                    calcularMenorCaminho();
-                    break;
-                case 2:
-                    listarCapitais();
-                    break;
-                case 3:
-                    System.out.println("Saindo do sistema...");
-                    return;
-                default:
-                    System.out.println("Opção inválida. Tente novamente.");
-                    break;
-            }
-        }
-    }
     private static void exibirMenu() {
         System.out.println("\nMenu:");
         System.out.println("1 - Calcular menor caminho entre capitais");
@@ -85,7 +57,7 @@ private static void calcularMenorCaminho() {
         }
     }
 
-      static void inicializarGrafo() {
+      public static void inicializarGrafo() {
     grafoCapitais = new Grafo();
 
     String[] capitais = {
@@ -112,6 +84,9 @@ private static void calcularMenorCaminho() {
     // Sul
     grafoCapitais.adicionarAresta("Curitiba", "Florianopolis", 300);
     grafoCapitais.adicionarAresta("Florianopolis", "Porto Alegre", 476);
+    
+    //Sul-Centro-Oeste
+    grafoCapitais.adicionarAresta("Curitiba", "Campo Grande", 1000);
 
     // Nordeste (litoral, de sul para norte)
     grafoCapitais.adicionarAresta("Salvador", "Aracaju", 356);
@@ -126,7 +101,7 @@ private static void calcularMenorCaminho() {
     grafoCapitais.adicionarAresta("Teresina", "Sao Luis", 446);
 
     // Nordeste-Norte
-    grafoCapitais.adicionarAresta("Sao Luis", "Belem", 806);
+    grafoCapitais.adicionarAresta("Sao Luis", "Belem", 800);
 
 
     // Centro-Oeste
@@ -164,11 +139,7 @@ private static void calcularMenorCaminho() {
     // Sudeste-Nordeste
     grafoCapitais.adicionarAresta("Vitoria", "Salvador", 1080);
     grafoCapitais.adicionarAresta("Belo Horizonte", "Salvador", 1372);
-
-
-
-    // Norte-Nordeste
-    grafoCapitais.adicionarAresta("Belem", "Sao Luis", 946);
+;
 
     // Outras ligações importantes para garantir conectividade
     grafoCapitais.adicionarAresta("Palmas", "Teresina", 1250);
