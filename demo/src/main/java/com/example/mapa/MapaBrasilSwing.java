@@ -17,7 +17,6 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 
 public class MapaBrasilSwing extends JFrame {
     private Grafo grafoCapitais;
@@ -25,7 +24,7 @@ public class MapaBrasilSwing extends JFrame {
     private JComboBox<String> comboOrigem;
     private JComboBox<String> comboDestino;
     private JPanel painelMapa;
-    private JLabel labelDistancia; // Novo atributo
+    private JLabel labelDistancia;
     private java.util.List<String> caminhoAtual = new ArrayList<>();
 
     public MapaBrasilSwing() {
